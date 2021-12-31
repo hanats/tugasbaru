@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kedua.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <table>
+            <tr>
+                <th>Masukan Nilai</th>
+                <th>Valas</th>
+                <th>Nilai Rupiah</th>
+            </tr>
+            <tr>
+                <td><input type="number" class="input"></td>
+                <td><select id="kurs">
+                    <option value="usd">Dollar US</option>
+                    <option value="sgd">Dollar Singapore</option>
+                    <option value="myr">Ringgit Malaysia</option>
+                    <option value="jpy">Yen Jepang</option>
+                    <option value="eur">Euro</option>
+                    <option value="sar">Riyal Arab Saudi</option>
+                </select></td>
+                <td class="hasil"><p></p></td>
+            </tr>
+        </table>
+        <br>
+        <button class="hitung">Hitung</button>
+    </fieldset> 
+    <script src="kedua.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+                <h2>Customer</h2>
+            </div>
+            <br>
+            <form method="request" name="form">
+                <input type="text" id="nama" name="nama" onkeypress="return maxlength(event)" placeholder="Nama Lengkap"><br>
+                <input type="email" id="email" name="email" placeholder="Email" required><br>
+                <input type="time" id="jam" name="jam" required><br>
+                <select name="tujuan" id="tujuan" required>
+                    <option value="0">Tujuan Keberangkatan</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="depok">Cirebon</option>
+                    <option value="banten">Banten</option>
+                    <option value="bekasi">Bekasi</option>
+                    <option value="Jaksel">Jakarta Selatan</option>
+                    <option value="sumedang">Sumedang</option>
+                </select>
+                <br>
+                <input type="text" id="tiket" name="tiket" placeholder="Jumlah Tiket" onkeyup="angka(this)" maxlength="2" required><br>
+                <input type="submit" onclick="return validated()" value="kirim">
+            </form>
+            <div id="Chatbox"></div>
+        </div>
+    </div>    
+
+    <script src="validasi.js"></script>
+</body>
+</html>
